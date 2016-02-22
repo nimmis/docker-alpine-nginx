@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec kill `cat /web/run/nginx.pid`
