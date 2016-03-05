@@ -1,3 +1,0 @@
-#!/bin/sh
-/usr/sbin/nginx -c /web/config/nginx.conf  -g "daemon off;pid /web/run/nginx.pid;" -p /web
-
