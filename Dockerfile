@@ -16,10 +16,7 @@ RUN apk update && apk upgrade && \
     rm -rf /var/cache/apk/*
 
 
-COPY service/nginx /etc/service/nginx/
-COPY populate /etc/run_always/
-COPY config/nginx.conf /etc/nginx/
-COPY config/nginx.conf /etc/nginx/nginx.conf.default
+COPY rootfs /
 
 VOLUME /web
 
