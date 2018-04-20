@@ -23,7 +23,7 @@ if [ ! -d /web/logs ]; then
   chown -R nginx.nginx /web/logs
 fi
 
-if [ ! -f /web/config/httpd.conf ]; then
+if [ ! -f /web/config/nginx.conf ]; then
   cp -R /etc/nginx/* /web/config/
   chown -R nginx.nginx /web/config
 fi
